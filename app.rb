@@ -28,7 +28,6 @@ class App < Sinatra::Base
     @medicine = all_the_medicines.select do |medicine|
       medicine.id == params[:id]
     end.first
-    erb :'/medicines/show.html'
   end
 
 end
